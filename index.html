@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendezvous</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-white">
+    <nav class="absolute top-0 w-full z-50 px-6 py-4">
+      <div
+        class="max-w-7xl mx-auto mt-6 px-6 py-4 rounded-3xl bg-white/60 whitespace-nowrap flex items-center justify-between"
+      >
+        <div class="text-purple-900 text-2xl pr-2 md:pr-0 font-bold">
+          rendezvous
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="#"
+            class="text-purple-900 hover:text-gray-300 transition-colors"
+            >Discover</a
+          >
+          <a
+            href="#"
+            class="text-purple-900 hover:text-gray-300 transition-colors"
+            >About us</a
+          >
+          <a
+            href="#"
+            class="text-purple-900 hover:text-gray-300 transition-colors"
+            >FAQs</a
+          >
+          <a
+            href="#"
+            class="text-purple-900 hover:text-gray-300 transition-colors"
+            >Contact us</a
+          >
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="text-purple-900 hover:text-gray-300 transition-colors">
+            Log in
+          </button>
+          <button
+            class="bg-purple-900 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative h-screen w-full">
+      <div
+        class="absolute inset-0"
+        style="
+          background-image: url('images/Rectangle\ 2.svg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      ></div>
+
+      <div
+        class="relative px-6 md:px-0 z-10 flex flex-col md:flex-row justify-center text-center md:justify-between md:items-end text-left gap-8 max-w-7xl mx-auto h-screen text-white"
+      >
+        <div class="max-w-4xl">
+          <h1 class="text-xl md:text-2xl font-bold mb-6 md:mb-12 leading-tight">
+            Ready to Rock? Discover the<br />
+            Hottest Events Here – Your<br />
+            Calendar's New Best Friend!
+          </h1>
+        </div>
+
+        <div class="max-w-md md:max-w-xl w-full">
+          <div
+            class="bg-white rounded-2xl py-2 px-6 md:mb-12 mx-auto flex flex-wrap items-center max-w-xl w-full md:w-auto"
+          >
+            <div class="grid grid-cols-2">
+              <span class="items-center inline-flex">
+                <img
+                  src="images/icons8-search-50.svg"
+                  alt="searc"
+                  class="w-6"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Search for an event"
+                  class="md:px-4 px-1 md:py-4 rounded-l-full focus:outline-none text-gray-700"
+                />
+              </span>
+              <div
+                class="border-l border-gray-200 grid grid-cols-2 gap-4 md:gap-10"
+              >
+                <select
+                  class="px-1 :px-4 py-2 text-sm md:text-md focus:outline-none text-gray-700 bg-white"
+                >
+                  <option>Categories</option>
+                  <option>Music</option>
+                  <option>Sports</option>
+                  <option>Comedy</option>
+                  <option>Arts</option>
+                </select>
+
+                <button
+                  class="bg-purple-900 w-auto flex items-center justify-center text-sm md:text-md text-white px-8 py-2 rounded-xl hover:bg-purple-700 transition-colors font-semibold whitespace-nowrap"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="text-3xl font-bold text-gray-900">Trending events</h2>
+          <a
+            href="index2.html"
+            class="text-purple-900 hover:text-purple-700 transition-colors font-semibold flex items-center"
+          >
+            View all trending events
+            <svg
+              class="ml-2 w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <div class="relative h-64">
+              <img
+                src="images/Rectangle 3.svg"
+                alt="Background image"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold  mb-2">ISWISS Live Show</h3>
+              <h3 class="text-sm  mb-2">SAT, OCT 5th • 9pm</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button
+                class="text-purple-900 font-semibold hover:text-purple-700 transition-colors flex items-center gap-2"
+              >
+                View details 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <div class="relative h-64">
+              <img
+                src="images/Rectangle 3 (1).svg"
+                alt="Background image"
+                class="absolute inset-0 w-full h-full object-contain"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold  mb-2">ISWISS Live Show</h3>
+              <h3 class="text-sm  mb-2">SAT, OCT 5th • 9pm</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button
+                class="text-purple-900 font-semibold hover:text-purple-700 transition-colors flex items-center gap-2"
+              >
+                View details
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <div class="relative h-64">
+              <img
+                src="images/Rectangle 3 (2).svg"
+                alt="Background image"
+                class="absolute inset-0 w-full h-full object-contain"
+              />
+            </div>
+
+            <div class="p-6">
+              <h3 class="font-bold  mb-2">ISWISS Live Show</h3>
+              <h3 class="text-sm  mb-2">SAT, OCT 5th • 9pm</h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button
+                class="text-purple-900 font-semibold hover:text-purple-700 transition-colors flex items-center gap-2"
+              >
+                View details
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 bg-gray-50">
+      <div class="max-w-7xl mx-auto md:flex justify-between gap-6">
+        <div class="text-start mb-12 w-full md:w-1/3">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Discover a World of Events<br />
+            Tailored Just for You.
+          </h2>
+          <button
+            class="bg-purple-900 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold"
+          >
+            View all events
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mx-auto w-full md:w-2/3">
+          <div
+            class="relative h-64 rounded-xl overflow-hidden group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0"
+              style="
+                background-image: url('images/Rectangle\ \(3\).svg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300"
+            ></div>
+
+            <div class="relative z-10 h-full flex items-center justify-center">
+              <div class="text-center text-white">
+                <h3 class="text-3xl font-bold mb-4">Online Events</h3>
+                <p class="text-lg opacity-90">Join from anywhere</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative h-64 rounded-xl overflow-hidden group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0"
+              style="
+                background-image: url('images/Rectangle\ \(4\).svg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300"
+            ></div>
+
+            <div class="relative z-10 h-full flex items-center justify-center">
+              <div class="text-center text-white">
+                <h3 class="text-3xl font-bold mb-4">Physical Events</h3>
+                <p class="text-lg opacity-90">Experience in person</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative h-64 rounded-xl overflow-hidden group cursor-pointer"
+          >
+            <div
+              class="absolute inset-0"
+              style="
+                background-image: url('images/Rectangle\ \(5\).svg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300"
+            ></div>
+
+            <div class="relative z-10 h-full flex items-center justify-center">
+              <div class="text-center text-white">
+                <h3 class="text-3xl font-bold mb-4">Hybrid Events</h3>
+                <p class="text-lg opacity-90">Best of both worlds</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-purple-900 text-white py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <div class="text-2xl font-bold mb-4">rendezvous</div>
+            <p class="text-purple-200 mb-4">
+              Your Personal Event Sherpa: Guiding<br />
+              Adventures, One Event at a Time.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-12">
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Features</h3>
+              <ul class="space-y-2 text-purple-200">
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Event discovery</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Virtual events</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Ticketing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Company</h3>
+              <ul class="space-y-2 text-purple-200">
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Contact us</h3>
+              <ul class="space-y-2 text-purple-200">
+                <li>info@events.com</li>
+                <li>+234 708 XXX XXXX</li>
+                <li class="mt-4">
+                  <strong>Race Course, 4 Masuku</strong><br />
+                  Dolphin, Lagos Island, Ikoyi Bridge<br />
+                  Rd, Lagos Island 102101, Lagos
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
