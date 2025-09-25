@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rendezvous</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="index.js" defer></script>
-
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="bg-white">
+    <script type="module" src="index.js" defer></script>
     <nav class="absolute top-0 w-full z-50 px-6 py-4">
       <div
         class="max-w-7xl mx-auto mt-6 px-6 py-4 rounded-3xl bg-white/60 whitespace-nowrap flex items-center justify-between"
@@ -141,7 +145,7 @@
           </a>
         </div>
 
-       <div class="grid md:grid-cols-3 gap-8 " id="events-container">
+        <div class="grid md:grid-cols-3 gap-8" id="events-container">
           <!--<div
             class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
           >
@@ -428,5 +432,33 @@
         </div>
       </div>
     </footer>
+
+    <div
+      id="product-modal"
+      class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50"
+    >
+      <div class="bg-white rounded-2xl max-w-lg w-full p-6 relative">
+        <button
+          id="close-modal"
+          class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+        >
+          ✕
+        </button>
+
+        <img
+          id="modal-image"
+          src=""
+          alt="Product image"
+          class="w-full h-64 object-contain mb-4 rounded-lg"
+        />
+        <h2 id="modal-title" class="text-2xl font-bold mb-2"></h2>
+        <p id="modal-category" class="text-sm text-gray-500 mb-2"></p>
+        <p
+          id="modal-price"
+          class="text-lg font-semibold text-purple-900 mb-4"
+        ></p>
+        <p id="modal-description" class="text-gray-700"></p>
+      </div>
+    </div>
   </body>
 </html>
