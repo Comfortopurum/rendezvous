@@ -330,7 +330,7 @@ service.getProducts().then((products) => {
       `;
 
     button.addEventListener("click", () => {
-      window.location.href = `/Rendevouz/product.html?productId=${product.id}`;
+      window.location.href = `product.html?productId=${product.id}`;
     });
 
     content.appendChild(title);
